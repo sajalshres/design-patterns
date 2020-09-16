@@ -11,5 +11,9 @@
   - file: creational/lazy-evaluation/README.md
 
 - part: Structural Design Patterns
+  chapters:
+  - file: structural/README.md
 
 - part: Behavioral Design Patterns
+  chapters:
+  - file: behavioral/README.md
