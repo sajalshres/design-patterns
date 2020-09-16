@@ -6,6 +6,7 @@
   - file: creational/abstract-factory/README.md
   - file: creational/builder/README.md
   - file: creational/prototype/README.md
+  - file: creational/pool/README.md
   - file: creational/singleton/README.md
   - file: creational/lazy-evaluation/README.md
 
