@@ -6,25 +6,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Patterns</title>
+    <title>Pool</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/sphinx-book-theme.js"></script>
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
@@ -32,10 +32,11 @@
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Factory" href="creational/factory/README.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Singleton" href="../singleton/README.html" />
+    <link rel="prev" title="Prototype" href="../prototype/README.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -52,15 +53,15 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
+<a class="navbar-brand text-wrap" href="../../index.html">
   
-  <img src="_static/logo.png" class="logo" alt="logo">
+  <img src="../../_static/logo.png" class="logo" alt="logo">
   
   
 </a>
 </div>
 
-<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
@@ -68,7 +69,7 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#">
+  <a class="reference internal" href="../../intro.html">
    Design Patterns
   </a>
  </li>
@@ -78,44 +79,44 @@
   Creational Design Patterns
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/factory/README.html">
+  <a class="reference internal" href="../factory/README.html">
    Factory
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/factory/README.html#when-to-user">
+  <a class="reference internal" href="../factory/README.html#when-to-user">
    When to user
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/abstract-factory/README.html">
+  <a class="reference internal" href="../abstract-factory/README.html">
    Abstract Factory
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/builder/README.html">
+  <a class="reference internal" href="../builder/README.html">
    Builder
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/prototype/README.html">
+  <a class="reference internal" href="../prototype/README.html">
    Prototype
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="creational/pool/README.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Pool
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/singleton/README.html">
+  <a class="reference internal" href="../singleton/README.html">
    Singleton
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="creational/lazy-evaluation/README.html">
+  <a class="reference internal" href="../lazy-evaluation/README.html">
    Lazy Evaluation
   </a>
  </li>
@@ -127,7 +128,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="structural/README.html">
+  <a class="reference internal" href="../../structural/README.html">
    Coming Soon
   </a>
  </li>
@@ -139,7 +140,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="behavioral/README.html">
+  <a class="reference internal" href="../../behavioral/README.html">
    Coming Soon
   </a>
  </li>
@@ -185,7 +186,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/creational/pool/README.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -221,27 +222,8 @@
         
               <div>
                 
-  <div class="section" id="design-patterns">
-<h1>Design Patterns<a class="headerlink" href="#design-patterns" title="Permalink to this headline">¶</a></h1>
-<p>Design patterns are blueprints that applies solution to commonly occuring problems in software design. They offer soultion to common problems faced by software developers during software development.</p>
-</div>
-<div class="section" id="some-history-gang-of-four">
-<h1>Some History: Gang of Four<a class="headerlink" href="#some-history-gang-of-four" title="Permalink to this headline">¶</a></h1>
-<p>The 4 authors (Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides) popularly known as <strong>Gang of Four</strong> (GoF) co-authored a book entitled <strong><a class="reference external" href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriented Software</a></strong>. This book is widely regarded as a milestone in the field of Software Development</p>
-</div>
-<div class="section" id="classification-of-patterns">
-<h1>Classification of Patterns<a class="headerlink" href="#classification-of-patterns" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><strong>Creational Design Patterns</strong>: describes ways to create objects or instantiate a class</p></li>
-<li><p><strong>Structural Design Patterns</strong>: provides solution to organize class heirarchy</p></li>
-<li><p><strong>Behavioral Design Patterns</strong>: provides solution to handle communication and responsibilities between objects.</p></li>
-</ul>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="section" id="pool">
+<h1>Pool<a class="headerlink" href="#pool" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -257,7 +239,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./creational/pool"
         },
         predefinedOutput: true
     }
@@ -272,7 +254,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="creational/factory/README.html" title="next page">Factory</a>
+    <a class='left-prev' id="prev-link" href="../prototype/README.html" title="previous page">Prototype</a>
+    <a class='right-next' id="next-link" href="../singleton/README.html" title="next page">Singleton</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -291,7 +274,7 @@
       </div>
     </div>
 
-    <script src="_static/js/index.js"></script>
+    <script src="../../_static/js/index.js"></script>
     
   </body>
 </html>
