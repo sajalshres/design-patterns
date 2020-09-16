@@ -1,5 +1,14 @@
 - file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+
+- part: Creational Design Patterns
+  chapters:
+  - file: creational/factory/README.md
+  - file: creational/abstract-factory/README.md
+  - file: creational/builder/README.md
+  - file: creational/prototype/README.md
+  - file: creational/singleton/README.md
+  - file: creational/lazy-evaluation/README.md
+
+- part: Structural Design Patterns
+
+- part: Behavioral Design Patterns
