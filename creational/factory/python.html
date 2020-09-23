@@ -251,7 +251,9 @@
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">EnglishLocalizer</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Language localizer</span>
+
+<span class="k">class</span> <span class="nc">EnglishLocalizer</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">localize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">message</span>
 
@@ -287,6 +289,71 @@
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dog कुकुर
 cat बिरालो
 rat rat
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Database manager</span>
+
+<span class="k">class</span> <span class="nc">FileDatabase</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> details&quot;</span>
+
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2"> created.&quot;</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2"> with </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> updated&quot;</span>
+
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;item with </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> removed&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">RelationalDatabase</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> details&quot;</span>
+
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2"> created.&quot;</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2"> with </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> updated&quot;</span>
+
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;item with </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s2"> removed&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">database_manager</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="n">database_types</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="n">FileDatabase</span><span class="p">,</span>
+        <span class="s2">&quot;relational&quot;</span><span class="p">:</span> <span class="n">RelationalDatabase</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">database_types</span><span class="p">[</span><span class="nb">type</span><span class="p">]()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;file&quot;</span><span class="p">,</span> <span class="s2">&quot;relational&quot;</span><span class="p">}:</span>
+        <span class="n">database</span> <span class="o">=</span> <span class="n">database_manager</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="nb">type</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">database</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">database</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;example&quot;</span><span class="p">}))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">database</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;example&quot;</span><span class="p">}))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">database</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 details
+{&#39;id&#39;: 1, &#39;name&#39;: &#39;example&#39;} created.
+{&#39;id&#39;: 1, &#39;name&#39;: &#39;example&#39;} with 1 updated
+item with 1 removed
+1 details
+{&#39;id&#39;: 1, &#39;name&#39;: &#39;example&#39;} created.
+{&#39;id&#39;: 1, &#39;name&#39;: &#39;example&#39;} with 1 updated
+item with 1 removed
 </pre></div>
 </div>
 </div>
