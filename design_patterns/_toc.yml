@@ -3,6 +3,8 @@
 - part: Creational Design Patterns
   chapters:
   - file: creational/factory/README.md
+    sections:
+      - file: creational/factory/python.ipynb
   - file: creational/abstract-factory/README.md
   - file: creational/builder/README.md
   - file: creational/prototype/README.md
