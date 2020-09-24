@@ -9,6 +9,8 @@
     sections:
       - file: creational/abstract-factory/python.ipynb
   - file: creational/builder/README.md
+    sections:
+      - file: creational/builder/python.ipynb
   - file: creational/prototype/README.md
   - file: creational/pool/README.md
   - file: creational/singleton/README.md
