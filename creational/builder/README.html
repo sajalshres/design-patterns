@@ -36,7 +36,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Prototype" href="../prototype/README.html" />
+    <link rel="next" title="Python" href="python.html" />
     <link rel="prev" title="Python" href="../abstract-factory/python.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,6 +94,26 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Builder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#examples">
+   Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#when-to-use">
+   When to use
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#advantages">
+   Advantages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#disadvantages">
+   Disadvantages
   </a>
  </li>
  <li class="toctree-l1">
@@ -220,6 +240,40 @@
                 
   <div class="section" id="builder">
 <h1>Builder<a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Helps in creating complex objects step by step.</p></li>
+<li><p>Allows to produce different types and representation of an object using same construction code.</p></li>
+</ul>
+</div>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Consider a pizza eatery. The waiter requests the check (builder) for a pizza with addtional cheese, onions and chicken.</p></li>
+</ul>
+</div>
+<div class="section" id="when-to-use">
+<h1>When to use<a class="headerlink" href="#when-to-use" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>When you need to do a lot of things to build an object.</p></li>
+<li><p>When your code should be able to create different representations of some product (for example: vegetarian and chicken burger).</p></li>
+<li><p>Avoid “telescopic constructor” that has a lot of optional parameter.</p></li>
+</ul>
+</div>
+<div class="section" id="advantages">
+<h1>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Better control of construction process</p></li>
+<li><p>Seperation of creation and representation of an object being created</p></li>
+<li><p>Same construction code for various representation of the object</p></li>
+</ul>
+</div>
+<div class="section" id="disadvantages">
+<h1>Disadvantages<a class="headerlink" href="#disadvantages" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Increases overall complexiy of the code as this pattern requires creating multiple classes</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -251,7 +305,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../abstract-factory/python.html" title="previous page">Python</a>
-    <a class='right-next' id="next-link" href="../prototype/README.html" title="next page">Prototype</a>
+    <a class='right-next' id="next-link" href="python.html" title="next page">Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
