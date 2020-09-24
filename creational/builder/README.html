@@ -95,26 +95,13 @@
   <a class="current reference internal" href="#">
    Builder
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#examples">
-   Examples
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#when-to-use">
-   When to use
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#advantages">
-   Advantages
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#disadvantages">
-   Disadvantages
-  </a>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python.html">
+     Python
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../prototype/README.html">
@@ -229,7 +216,29 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-to-use">
+   When to use
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advantages">
+   Advantages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#disadvantages">
+   Disadvantages
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -244,15 +253,14 @@
 <li><p>Helps in creating complex objects step by step.</p></li>
 <li><p>Allows to produce different types and representation of an object using same construction code.</p></li>
 </ul>
-</div>
 <div class="section" id="examples">
-<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Consider a pizza eatery. The waiter requests the check (builder) for a pizza with addtional cheese, onions and chicken.</p></li>
 </ul>
 </div>
 <div class="section" id="when-to-use">
-<h1>When to use<a class="headerlink" href="#when-to-use" title="Permalink to this headline">¶</a></h1>
+<h2>When to use<a class="headerlink" href="#when-to-use" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>When you need to do a lot of things to build an object.</p></li>
 <li><p>When your code should be able to create different representations of some product (for example: vegetarian and chicken burger).</p></li>
@@ -260,7 +268,7 @@
 </ul>
 </div>
 <div class="section" id="advantages">
-<h1>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h1>
+<h2>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Better control of construction process</p></li>
 <li><p>Seperation of creation and representation of an object being created</p></li>
@@ -268,11 +276,12 @@
 </ul>
 </div>
 <div class="section" id="disadvantages">
-<h1>Disadvantages<a class="headerlink" href="#disadvantages" title="Permalink to this headline">¶</a></h1>
+<h2>Disadvantages<a class="headerlink" href="#disadvantages" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Increases overall complexiy of the code as this pattern requires creating multiple classes</p></li>
 </ul>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
