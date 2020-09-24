@@ -5,7 +5,7 @@
 
 ## Examples
 
-- Consider a pizza eatery. The waiter requests the check (builder) for a pizza with addtional cheese, onions and chicken. 
+- Consider a pizza eatery. The waiter requests the chef (builder) for a pizza with addtional cheese, onions and chicken.
 
 ## When to use
 
