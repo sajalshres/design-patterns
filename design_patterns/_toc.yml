@@ -12,6 +12,8 @@
     sections:
       - file: creational/builder/python.ipynb
   - file: creational/prototype/README.md
+    sections:
+      - file: creational/prototype/python.ipynb
   - file: creational/pool/README.md
   - file: creational/singleton/README.md
   - file: creational/lazy-evaluation/README.md
@@ -23,3 +25,5 @@
 - part: Behavioral Design Patterns
   chapters:
   - file: behavioral/README.md
+
+- file: references.md
