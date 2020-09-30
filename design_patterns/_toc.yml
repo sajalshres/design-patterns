@@ -25,5 +25,3 @@
 - part: Behavioral Design Patterns
   chapters:
   - file: behavioral/README.md
-
-- file: references.md
