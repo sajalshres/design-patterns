@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 <html>
@@ -7,9 +6,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prototype</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="../../_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    
+  <link rel="stylesheet" href="../../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.bfb7730f9caf2ec0b46a44615585038c.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -17,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.30270b6e4c972e43c488.js">
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -25,8 +44,8 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -36,11 +55,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Pool" href="../pool/README.html" />
+    <link rel="next" title="Python" href="python.html" />
     <link rel="prev" title="Python" href="../builder/python.html" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
 
 
 
@@ -100,6 +119,13 @@
   <a class="current reference internal" href="#">
    Prototype
   </a>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python.html">
+     Python
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../pool/README.html">
@@ -147,7 +173,7 @@
  <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  Compiled by <a href="mailto:sajalshres@gmail.com">Sajal N. Shrestha</a>
 </div>
 
 </div>
@@ -205,12 +231,31 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-use-this-pattern">
+   Why use this pattern?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advantages">
+   Advantages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#disadvantages">
+   Disadvantages
+  </a>
+ </li>
+</ul>
+
         </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -220,6 +265,35 @@
                 
   <div class="section" id="prototype">
 <h1>Prototype<a class="headerlink" href="#prototype" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Helps to copy existing objects without making the code dependent on their classes</p></li>
+<li><p>Aims to reeduce the number of classes required by an application.</p></li>
+<li><p>Instead of relying on subclasses, it creates object by copying a prototype instance at run-time.</p></li>
+</ul>
+<div class="section" id="why-use-this-pattern">
+<h2>Why use this pattern?<a class="headerlink" href="#why-use-this-pattern" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Consider you have an object in your code and you want to create a copy of it. But the object may have some private attributes and methods that may not be visible by directly inspecting the object. This also creates a dependency problem with that class as well.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Prototype</span></code> pattern tries to solve this problem by delegating the cloning process. All the objects that support cloning must have a common interface usually just <code class="docutils literal notranslate"><span class="pre">clone()</span></code> method that will let you clone an object withouth couppling your code to that object.</p></li>
+<li><p>An object that supports cloning is called a <code class="docutils literal notranslate"><span class="pre">prototype</span></code>. When objects have numbers of fields and configurations, clonining can be a good alternative to sub-classing.</p></li>
+<li><p>This pattern will actually reduce the number of subclasses that only differ in the way they are initialized. Like the devs should create the subclass just to be able to create object with a required configuration.</p></li>
+</ul>
+</div>
+<div class="section" id="advantages">
+<h2>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Provides alternative to inheritance.</p></li>
+<li><p>Provides clonning of objects without coupling classes.</p></li>
+</ul>
+</div>
+<div class="section" id="disadvantages">
+<h2>Disadvantages<a class="headerlink" href="#disadvantages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Cloning complex objects can be tedious.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -251,7 +325,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../builder/python.html" title="previous page">Python</a>
-    <a class='right-next' id="next-link" href="../pool/README.html" title="next page">Pool</a>
+    <a class='right-next' id="next-link" href="python.html" title="next page">Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -270,7 +344,10 @@
       </div>
     </div>
 
-    <script src="../../_static/js/index.js"></script>
+    
+  <script src="../../_static/js/index.30270b6e4c972e43c488.js"></script>
+
+
     
   </body>
 </html>
